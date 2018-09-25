@@ -53,13 +53,6 @@
           <param name="vstest_runner_path" value="%teamcity.dotnet.vstest.15.0%" />
         </parameters>
       </runner>
-      <runner id="RUNNER_21" name="" type="dotnet.cli">
-        <parameters>
-          <param name="command" value="publish" />
-          <param name="paths" value="Test/Test.csproj" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="TestTeamCity_HttpsGithubComRedonAllaIdelaSolutionTestTeamCityGitRefsHeadsMaster" />
