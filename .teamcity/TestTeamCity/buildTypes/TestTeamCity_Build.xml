@@ -57,6 +57,13 @@
           <param name="vs.version" value="vs2017" />
         </parameters>
       </runner>
+      <runner id="RUNNER_27" name="" type="simpleRunner">
+        <parameters>
+          <param name="command.executable" value="C:\Program Files (x86)\Git\bin\git.exe" />
+          <param name="command.parameters" value="https://RedonAllaIdelaSolution@testteamcity.scm.azurewebsites.net:443/TestTeamCity.git" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="TestTeamCity_HttpsGithubComRedonAllaIdelaSolutionTestTeamCityGitRefsHeadsMaster" />
