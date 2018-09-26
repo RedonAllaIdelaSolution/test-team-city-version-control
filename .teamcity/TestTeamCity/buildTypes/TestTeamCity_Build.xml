@@ -22,7 +22,6 @@
       <runner id="RUNNER_13" name="" type="VS.Solution">
         <parameters>
           <param name="build-file-path" value="Test.sln" />
-          <param name="msbuild.prop.Configuration" value="Relase" />
           <param name="msbuild_version" value="15.0" />
           <param name="run-platform" value="x86" />
           <param name="runnerArgs" value="/p:Configuration=Debug" />
