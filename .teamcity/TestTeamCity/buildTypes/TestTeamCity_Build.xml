@@ -5,7 +5,7 @@
   <settings>
     <options>
       <option name="allowPersonalBuildTriggering" value="false" />
-      <option name="artifactRules" value="/target/surefire-reports/**" />
+      <option name="artifactRules" value="results" />
       <option name="maximumNumberOfBuilds" value="1" />
     </options>
     <disabled-settings>
