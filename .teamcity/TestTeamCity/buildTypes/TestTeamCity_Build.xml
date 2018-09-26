@@ -19,18 +19,6 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
-      <runner id="RUNNER_13" name="" type="VS.Solution">
-        <parameters>
-          <param name="build-file-path" value="Test.sln" />
-          <param name="msbuild.prop.Configuration" value="Debug" />
-          <param name="msbuild_version" value="15.0" />
-          <param name="run-platform" value="x86" />
-          <param name="targets" value="Rebuild" />
-          <param name="teamcity.step.mode" value="default" />
-          <param name="toolsVersion" value="15.0" />
-          <param name="vs.version" value="vs2017" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_26" name="" type="NUnit">
         <parameters>
           <param name="dotNetCoverage.NCover.HTMLReport.File.Sort" value="0" />
@@ -55,6 +43,18 @@
           <param name="nunit_platform" value="MSIL" />
           <param name="nunit_version" value="NUnit-2.6.4" />
           <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_13" name="" type="VS.Solution">
+        <parameters>
+          <param name="build-file-path" value="Test.sln" />
+          <param name="msbuild.prop.Configuration" value="Debug" />
+          <param name="msbuild_version" value="15.0" />
+          <param name="run-platform" value="x86" />
+          <param name="targets" value="Rebuild" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="toolsVersion" value="15.0" />
+          <param name="vs.version" value="vs2017" />
         </parameters>
       </runner>
     </build-runners>
