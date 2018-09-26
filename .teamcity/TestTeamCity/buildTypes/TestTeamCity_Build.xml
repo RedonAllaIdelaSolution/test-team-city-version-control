@@ -24,7 +24,7 @@
           <param name="build-file-path" value="Test.sln" />
           <param name="msbuild_version" value="15.0" />
           <param name="run-platform" value="x86" />
-          <param name="runnerArgs" value="/p:Configuration=Debug" />
+          <param name="runnerArgs" value="/p:Configuration=Relase" />
           <param name="targets" value="Rebuild" />
           <param name="teamcity.step.mode" value="default" />
           <param name="toolsVersion" value="15.0" />
