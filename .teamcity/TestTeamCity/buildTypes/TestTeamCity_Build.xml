@@ -5,7 +5,6 @@
   <settings>
     <options>
       <option name="allowPersonalBuildTriggering" value="false" />
-      <option name="artifactRules" value="+:Release =&gt; Release.%MajorVersion%.%MinorVersion%.%build.number%.zip&#xA;-:Release/**/*.xml =&gt; Release.%MajorVersion%.%MinorVersion%.%build.number%.zip" />
       <option name="maximumNumberOfBuilds" value="1" />
     </options>
     <parameters />
