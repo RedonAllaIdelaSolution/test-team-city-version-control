@@ -54,6 +54,16 @@
           <param name="msbuild.prop.Configuration" value="Release" />
           <param name="msbuild_version" value="15.0" />
           <param name="run-platform" value="x86" />
+          <param name="runnerArgs"><![CDATA[/p:Configuration=Release
+/p:OutputPath=bin
+/p:DeployOnBuild=True
+/p:DeployTarget=MSDeployPublish
+/p:MsDeployServiceUrl=testteamcity.scm.azurewebsites.net:443
+/p:username="$TestTeamCity"
+/p:password="rT2FK0b6dE9gE5ZxLng7CNoKoi3WwYceKwNsxkQk4iFWFeAjFh5aApkNyLNx"
+/p:SkipExtraFilesOnServer=True
+/p:verb=sync
+/p:dest=auto]]></param>
           <param name="targets" value="Rebuild" />
           <param name="teamcity.step.mode" value="default" />
           <param name="toolsVersion" value="15.0" />
