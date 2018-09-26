@@ -25,13 +25,6 @@
           <param name="vs.version" value="vs2017" />
         </parameters>
       </runner>
-      <runner id="RUNNER_22" name="" type="dotnet.cli">
-        <parameters>
-          <param name="command" value="publish" />
-          <param name="paths" value="Test/Test.csproj" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="TestTeamCity_HttpsGithubComRedonAllaIdelaSolutionTestTeamCityGitRefsHeadsMaster" />
