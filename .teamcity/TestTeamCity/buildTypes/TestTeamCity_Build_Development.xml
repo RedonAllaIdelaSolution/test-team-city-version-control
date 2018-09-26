@@ -23,7 +23,7 @@
           <param name="msbuild_version" value="15.0" />
           <param name="run-platform" value="x86" />
           <param name="runnerArgs"><![CDATA[/p:Configuration=Debug
-p:Platform="Any CPU"]]></param>
+/p:Platform="Any CPU"]]></param>
           <param name="targets" value="Rebuild" />
           <param name="teamcity.step.mode" value="default" />
           <param name="toolsVersion" value="15.0" />
