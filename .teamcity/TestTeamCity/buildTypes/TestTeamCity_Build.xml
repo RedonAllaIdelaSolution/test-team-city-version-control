@@ -4,7 +4,7 @@
   <description />
   <settings>
     <options>
-      <option name="artifactRules" value="/Test-TeamCity/Development/**" />
+      <option name="artifactRules" value="C:/TeamCity/buildAgent/work/b345e92608a1bb22/Build/Development/**" />
     </options>
     <parameters />
     <build-runners>
