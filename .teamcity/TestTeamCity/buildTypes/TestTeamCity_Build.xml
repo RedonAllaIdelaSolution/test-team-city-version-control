@@ -7,9 +7,6 @@
       <option name="allowPersonalBuildTriggering" value="false" />
       <option name="maximumNumberOfBuilds" value="1" />
     </options>
-    <disabled-settings>
-      <setting-ref ref="RUNNER_27" />
-    </disabled-settings>
     <parameters />
     <build-runners>
       <runner id="RUNNER_14" name="" type="jb.nuget.installer">
@@ -61,13 +58,6 @@
           <param name="teamcity.step.mode" value="default" />
           <param name="toolsVersion" value="15.0" />
           <param name="vs.version" value="vs2017" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_27" name="" type="simpleRunner">
-        <parameters>
-          <param name="command.executable" value="C:\Users\Redon\AppData\Local\GitHubDesktop\app-1.4.0\resources\app\git\cmd\git.exe" />
-          <param name="command.parameters" value="https://RedonAllaIdelaSolution@testteamcity.scm.azurewebsites.net:443/TestTeamCity.git" />
-          <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
     </build-runners>
