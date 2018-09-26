@@ -25,6 +25,19 @@
           <param name="vs.version" value="vs2017" />
         </parameters>
       </runner>
+      <runner id="RUNNER_23" name="Deploy" type="VS.Solution">
+        <parameters>
+          <param name="build-file-path" value="Test.sln" />
+          <param name="msbuild.prop.Configuration" value="Relase" />
+          <param name="msbuild.prop.Platform" value="Any CPU" />
+          <param name="msbuild_version" value="15.0" />
+          <param name="run-platform" value="x86" />
+          <param name="targets" value="Rebuild" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="toolsVersion" value="15.0" />
+          <param name="vs.version" value="vs2017" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="TestTeamCity_HttpsGithubComRedonAllaIdelaSolutionTestTeamCityGitRefsHeadsMaster" />
