@@ -55,7 +55,6 @@
           <param name="msbuild_version" value="15.0" />
           <param name="run-platform" value="x86" />
           <param name="runnerArgs"><![CDATA[/p:DeployOnBuild=True
-/p:PublishProfile="Development"
 /p:ProfileTransformWebConfigEnabled=False]]></param>
           <param name="targets" value="Rebuild" />
           <param name="teamcity.step.mode" value="default" />
