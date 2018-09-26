@@ -53,7 +53,8 @@
           <param name="msbuild.prop.Configuration" value="Release" />
           <param name="msbuild_version" value="15.0" />
           <param name="run-platform" value="x86" />
-          <param name="runnerArgs"><![CDATA[/p:DeployOnBuild=true
+          <param name="runnerArgs"><![CDATA["C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe"
+/p:DeployOnBuild=true
 /p:PublishProfile=CreatePackage
 /p:PackageLocation=$(build.stagingDirectory)]]></param>
           <param name="targets" value="Rebuild" />
