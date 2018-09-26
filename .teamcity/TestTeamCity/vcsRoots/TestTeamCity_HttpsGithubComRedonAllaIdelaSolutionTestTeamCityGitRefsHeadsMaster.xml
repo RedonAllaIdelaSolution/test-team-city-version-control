@@ -3,12 +3,14 @@
   <name>https://github.com/RedonAllaIdelaSolution/test-team-city.git#refs/heads/master</name>
   <param name="agentCleanFilesPolicy" value="ALL_UNTRACKED" />
   <param name="agentCleanPolicy" value="ON_BRANCH_CHANGE" />
-  <param name="authMethod" value="ANONYMOUS" />
+  <param name="authMethod" value="PASSWORD" />
   <param name="branch" value="refs/heads/master" />
   <param name="ignoreKnownHosts" value="true" />
+  <param name="secure:password" value="credentialsJSON:1daf4a91-ea9b-46fd-a8c7-426826f43284" />
   <param name="submoduleCheckout" value="CHECKOUT" />
   <param name="url" value="https://github.com/RedonAllaIdelaSolution/test-team-city.git" />
   <param name="useAlternates" value="true" />
+  <param name="username" value="RedonAllaIdelaSolution" />
   <param name="usernameStyle" value="USERID" />
 </vcs-root>
 
