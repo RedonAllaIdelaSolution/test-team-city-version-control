@@ -61,7 +61,7 @@
 /p:MSDeployPublishMethod=MSDeploy
 /p:MsDeployServiceUrl=testteamcity.scm.azurewebsites.net:443
 /p:AllowUntrustedCertificate=True
-/p:DeployIisAppPath=http://testteamcity.azurewebsites.net
+/p:DeployIisAppPath=https://testteamcity.azurewebsites.net
 /p:username="$TestTeamCity"
 /p:password="rT2FK0b6dE9gE5ZxLng7CNoKoi3WwYceKwNsxkQk4iFWFeAjFh5aApkNyLNx"
 /p:SkipExtraFilesOnServer=True
