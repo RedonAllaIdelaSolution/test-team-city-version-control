@@ -7,9 +7,6 @@
       <option name="allowPersonalBuildTriggering" value="false" />
       <option name="maximumNumberOfBuilds" value="1" />
     </options>
-    <disabled-settings>
-      <setting-ref ref="RUNNER_4" />
-    </disabled-settings>
     <parameters />
     <build-runners>
       <runner id="RUNNER_14" name="" type="jb.nuget.installer">
@@ -31,19 +28,6 @@
           <param name="teamcity.step.mode" value="default" />
           <param name="toolsVersion" value="15.0" />
           <param name="vs.version" value="vs2017" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_4" name="" type="ftp-deploy-runner">
-        <parameters>
-          <param name="jetbrains.buildServer.deployer.ftp.authMethod" value="USER_PWD" />
-          <param name="jetbrains.buildServer.deployer.ftp.ftpMode" value="PASSIVE" />
-          <param name="jetbrains.buildServer.deployer.ftp.securityMode" value="0" />
-          <param name="jetbrains.buildServer.deployer.ftp.transferMethod" value="AUTO" />
-          <param name="jetbrains.buildServer.deployer.sourcePath" value="%system.teamcity.build.checkoutDir%/Test/bin/" />
-          <param name="jetbrains.buildServer.deployer.targetUrl" value="ftp://waws-prod-dm1-025.ftp.azurewebsites.windows.net" />
-          <param name="jetbrains.buildServer.deployer.username" value="$TestTeamCity" />
-          <param name="secure:jetbrains.buildServer.deployer.password" value="credentialsJSON:55605e15-d2b3-41ec-8999-f103d01c47b1" />
-          <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
       <runner id="RUNNER_7" name="build publish" type="VS.Solution">
@@ -68,6 +52,19 @@
           <param name="teamcity.step.mode" value="default" />
           <param name="toolsVersion" value="15.0" />
           <param name="vs.version" value="vs2017" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_4" name="" type="ftp-deploy-runner">
+        <parameters>
+          <param name="jetbrains.buildServer.deployer.ftp.authMethod" value="USER_PWD" />
+          <param name="jetbrains.buildServer.deployer.ftp.ftpMode" value="PASSIVE" />
+          <param name="jetbrains.buildServer.deployer.ftp.securityMode" value="0" />
+          <param name="jetbrains.buildServer.deployer.ftp.transferMethod" value="AUTO" />
+          <param name="jetbrains.buildServer.deployer.sourcePath" value="%system.teamcity.build.checkoutDir%/Test/bin/" />
+          <param name="jetbrains.buildServer.deployer.targetUrl" value="https://RedonAllaIdelaSolution@testteamcity.scm.azurewebsites.net:443/TestTeamCity.git" />
+          <param name="jetbrains.buildServer.deployer.username" value="$TestTeamCity" />
+          <param name="secure:jetbrains.buildServer.deployer.password" value="credentialsJSON:55605e15-d2b3-41ec-8999-f103d01c47b1" />
+          <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
     </build-runners>
