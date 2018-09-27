@@ -34,7 +34,6 @@
         <parameters>
           <param name="command" value="publish" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="outputDir" value="C:\TeamCity\buildAgent\work\808482b6c63b1216\build_r" />
           <param name="paths" value="Test.sln" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
