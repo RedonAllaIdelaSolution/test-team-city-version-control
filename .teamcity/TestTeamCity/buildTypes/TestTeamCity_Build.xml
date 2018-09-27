@@ -39,18 +39,18 @@
           <param name="msbuild.prop.Configuration" value="Release" />
           <param name="msbuild_version" value="15.0" />
           <param name="run-platform" value="x86" />
-          <param name="runnerArgs"><![CDATA[/p:Configuration=Release
-/p:OutputPath=bin
-/p:DeployOnBuild=True
-/p:DeployTarget=MSDeployPublish
-/p:MSDeployPublishMethod=MSDeploy
-/p:MsDeployServiceUrl=testteamcity.scm.azurewebsites.net:443
-/p:DeployIisAppPath=ftp://waws-prod-dm1-025.ftp.azurewebsites.windows.net
-/p:username="$TestTeamCity"
-/p:password="rT2FK0b6dE9gE5ZxLng7CNoKoi3WwYceKwNsxkQk4iFWFeAjFh5aApkNyLNx"
-/p:SkipExtraFilesOnServer=True
-/p:verb=sync
-/p:dest=auto]]></param>
+          <param name="runnerArgs"><![CDATA["C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe"
+    -source:package=%system.teamcity.build.checkoutDir%/Test/bin/
+    -dest:auto,
+        computerName="testteamcity.scm.azurewebsites.net:443/msdeploy.axd?site=TestTeamCity",
+        userName="$TestTeamCity",
+        password="rT2FK0b6dE9gE5ZxLng7CNoKoi3WwYceKwNsxkQk4iFWFeAjFh5aApkNyLNx",
+        authtype="Basic",
+        includeAcls="False"
+    -verb:sync
+    -disableLink:AppPoolExtension
+	-disableLink:ContentExtension
+	-disableLink:CertificateExtension]]></param>
           <param name="targets" value="Publish" />
           <param name="teamcity.step.mode" value="default" />
           <param name="toolsVersion" value="15.0" />
