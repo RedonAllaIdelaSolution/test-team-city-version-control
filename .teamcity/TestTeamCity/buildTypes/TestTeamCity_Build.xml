@@ -10,7 +10,6 @@
     </options>
     <disabled-settings>
       <setting-ref ref="RUNNER_4" />
-      <setting-ref ref="RUNNER_8" />
     </disabled-settings>
     <parameters />
     <build-runners>
