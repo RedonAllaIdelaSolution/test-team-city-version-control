@@ -40,6 +40,7 @@
           <param name="msbuild_version" value="15.0" />
           <param name="run-platform" value="x86" />
           <param name="runnerArgs"><![CDATA["C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe"
+-source:package="%system.teamcity.build.checkoutDir%/Test/bin/"
     -dest:auto,
         computerName="testteamcity.scm.azurewebsites.net:443/msdeploy.axd?site=TestTeamCity",
         userName="$TestTeamCity",
