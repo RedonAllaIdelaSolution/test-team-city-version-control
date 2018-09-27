@@ -42,7 +42,7 @@
           <param name="run-platform" value="x86" />
           <param name="runnerArgs"><![CDATA[/p:Configuration=Release
 /p:DeployOnBuild=True
-/p:OutDir=%system.teamcity.build.checkoutDir%/DevBuild/]]></param>
+/p:OutDir=%system.teamcity.build.checkoutDir%]]></param>
           <param name="targets" value="Publish" />
           <param name="teamcity.step.mode" value="default" />
           <param name="toolsVersion" value="15.0" />
