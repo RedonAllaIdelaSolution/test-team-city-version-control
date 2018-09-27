@@ -63,7 +63,7 @@
       </runner>
       <runner id="RUNNER_8" name="" type="MSBuild">
         <parameters>
-          <param name="build-file-path" value="Test/Test.csproj" />
+          <param name="build-file-path" value="Test" />
           <param name="dotNetCoverage.NCover.HTMLReport.File.Sort" value="0" />
           <param name="dotNetCoverage.NCover.HTMLReport.File.Type" value="1" />
           <param name="dotNetCoverage.NCover.Reg" value="selected" />
