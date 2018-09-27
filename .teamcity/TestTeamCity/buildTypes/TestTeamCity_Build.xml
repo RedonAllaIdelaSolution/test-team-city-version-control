@@ -34,7 +34,7 @@
         <parameters>
           <param name="command" value="publish" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="paths" value="Test/Test.csproj" />
+          <param name="paths" value="Test/ApplicationInsights.config" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
