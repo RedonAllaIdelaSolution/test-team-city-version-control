@@ -46,6 +46,30 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_7" name="build publish" type="VS.Solution">
+        <parameters>
+          <param name="build-file-path" value="Test.sln" />
+          <param name="msbuild.prop.Configuration" value="Release" />
+          <param name="msbuild_version" value="15.0" />
+          <param name="run-platform" value="x86" />
+          <param name="runnerArgs"><![CDATA[/p:Configuration=Release
+/p:OutputPath=bin
+/p:DeployOnBuild=True
+/p:DeployTarget=MSDeployPublish
+/p:MSDeployPublishMethod=MSDeploy
+/p:MsDeployServiceUrl=testteamcity.scm.azurewebsites.net:443
+/p:DeployIisAppPath=ftp://waws-prod-dm1-025.ftp.azurewebsites.windows.net
+/p:username="$TestTeamCity"
+/p:password="rT2FK0b6dE9gE5ZxLng7CNoKoi3WwYceKwNsxkQk4iFWFeAjFh5aApkNyLNx"
+/p:SkipExtraFilesOnServer=True
+/p:verb=sync
+/p:dest=auto]]></param>
+          <param name="targets" value="Publish" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="toolsVersion" value="15.0" />
+          <param name="vs.version" value="vs2017" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="TestTeamCity_HttpsGithubComRedonAllaIdelaSolutionTestTeamCityGitRefsHeadsMaster" />
