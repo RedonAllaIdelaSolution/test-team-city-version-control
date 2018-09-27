@@ -5,7 +5,7 @@
   <settings>
     <options>
       <option name="allowPersonalBuildTriggering" value="false" />
-      <option name="artifactRules" value="%system.teamcity.build.checkoutDir%/DevBuild/" />
+      <option name="artifactRules" value="%system.teamcity.build.checkoutDir%\DevBuild" />
       <option name="maximumNumberOfBuilds" value="1" />
     </options>
     <disabled-settings>
