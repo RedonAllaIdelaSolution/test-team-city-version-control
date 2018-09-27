@@ -32,12 +32,14 @@
       </runner>
       <runner id="RUNNER_29" name="build publish" type="ftp-deploy-runner">
         <parameters>
-          <param name="jetbrains.buildServer.deployer.ftp.authMethod" value="ANONYMOUS" />
+          <param name="jetbrains.buildServer.deployer.ftp.authMethod" value="USER_PWD" />
           <param name="jetbrains.buildServer.deployer.ftp.ftpMode" value="PASSIVE" />
           <param name="jetbrains.buildServer.deployer.ftp.securityMode" value="0" />
           <param name="jetbrains.buildServer.deployer.ftp.transferMethod" value="AUTO" />
           <param name="jetbrains.buildServer.deployer.sourcePath" value="%system.agent.work.dir%" />
           <param name="jetbrains.buildServer.deployer.targetUrl" value="ftp://waws-prod-dm1-025.ftp.azurewebsites.windows.net" />
+          <param name="jetbrains.buildServer.deployer.username" value="RedonAllaIdelaSolution" />
+          <param name="secure:jetbrains.buildServer.deployer.password" value="credentialsJSON:0524808b-10e8-4c59-b5ad-88215e27b7da" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
