@@ -7,6 +7,9 @@
       <option name="allowPersonalBuildTriggering" value="false" />
       <option name="maximumNumberOfBuilds" value="1" />
     </options>
+    <disabled-settings>
+      <setting-ref ref="RUNNER_4" />
+    </disabled-settings>
     <parameters />
     <build-runners>
       <runner id="RUNNER_14" name="" type="jb.nuget.installer">
@@ -24,6 +27,18 @@
           <param name="msbuild.prop.Configuration" value="Release" />
           <param name="msbuild_version" value="15.0" />
           <param name="run-platform" value="x86" />
+          <param name="runnerArgs"><![CDATA[/p:Configuration=Release
+/p:OutputPath=bin
+/p:DeployOnBuild=True
+/p:DeployTarget=MSDeployPublish
+/p:MSDeployPublishMethod=MSDeploy
+/p:MsDeployServiceUrl=testteamcity.scm.azurewebsites.net:443
+/p:DeployIisAppPath=ftp://waws-prod-dm1-025.ftp.azurewebsites.windows.net
+/p:username="$TestTeamCity"
+/p:password="rT2FK0b6dE9gE5ZxLng7CNoKoi3WwYceKwNsxkQk4iFWFeAjFh5aApkNyLNx"
+/p:SkipExtraFilesOnServer=True
+/p:verb=sync
+/p:dest=auto]]></param>
           <param name="targets" value="Publish" />
           <param name="teamcity.step.mode" value="default" />
           <param name="toolsVersion" value="15.0" />
