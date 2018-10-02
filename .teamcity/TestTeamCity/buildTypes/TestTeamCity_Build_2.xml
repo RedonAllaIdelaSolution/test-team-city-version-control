@@ -113,6 +113,19 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_12" name="Upload index" type="ftp-deploy-runner">
+        <parameters>
+          <param name="jetbrains.buildServer.deployer.ftp.authMethod" value="USER_PWD" />
+          <param name="jetbrains.buildServer.deployer.ftp.ftpMode" value="PASSIVE" />
+          <param name="jetbrains.buildServer.deployer.ftp.securityMode" value="0" />
+          <param name="jetbrains.buildServer.deployer.ftp.transferMethod" value="AUTO" />
+          <param name="jetbrains.buildServer.deployer.sourcePath" value="%system.teamcity.build.checkoutDir%/Test/obj/Release/Package/PackageTmp/test" />
+          <param name="jetbrains.buildServer.deployer.targetUrl" value="ftp://waws-prod-dm1-025.ftp.azurewebsites.windows.net" />
+          <param name="jetbrains.buildServer.deployer.username" value="$TestTeamCity__uat" />
+          <param name="secure:jetbrains.buildServer.deployer.password" value="credentialsJSON:c7e1ec6f-bab5-4ed3-9288-412d95f78c53" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="TestTeamCity_HttpsGithubComRedonAllaIdelaSolutionTestTeamCityGitRefsHeadsMaster" />
