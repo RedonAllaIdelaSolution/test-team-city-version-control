@@ -16,7 +16,7 @@
     </disabled-settings>
     <parameters />
     <build-runners>
-      <runner id="RUNNER_18" name="Get teamcity.build.branc" type="simpleRunner">
+      <runner id="RUNNER_18" name="Get teamcity.build.branch" type="simpleRunner">
         <parameters>
           <param name="script.content" value="node getTeamCityBranchBuild.js --branch=%teamcity.build.branch%" />
           <param name="teamcity.step.mode" value="default" />
