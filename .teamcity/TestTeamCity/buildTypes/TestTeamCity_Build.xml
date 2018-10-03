@@ -18,7 +18,10 @@
     <build-runners>
       <runner id="RUNNER_18" name="Get teamcity.build.branch" type="simpleRunner">
         <parameters>
-          <param name="script.content" value="node getTeamCityBranchBuild.js --branch=%vcsroot.branch% --Test=%env.Test%" />
+          <param name="script.content"><![CDATA[node getTeamCityBranchBuild.js --branch=%vcsroot.branch% --Test=%env.Test%
+Write-Host "##teamcity[setParameter name='env.TEST' value='$test']"
+
+echo %env.Test%]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
