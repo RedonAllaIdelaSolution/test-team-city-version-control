@@ -113,6 +113,13 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_17" name="Get teamcity.build.branc" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="node getTeamCityBranchBuild.js --branch=%teamcity.build.branch%" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="TestTeamCity_HttpsGithubComRedonAllaIdelaSolutionTestTeamCityGitRefsHeadsMaster" />
