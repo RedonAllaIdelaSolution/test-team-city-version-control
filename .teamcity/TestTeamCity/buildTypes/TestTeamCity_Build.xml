@@ -14,9 +14,7 @@
       <setting-ref ref="RUNNER_8" />
       <setting-ref ref="RUNNER_9" />
     </disabled-settings>
-    <parameters>
-      <param name="env.Test" value="12" />
-    </parameters>
+    <parameters />
     <build-runners>
       <runner id="RUNNER_18" name="Get teamcity.build.branch" type="simpleRunner">
         <parameters>
