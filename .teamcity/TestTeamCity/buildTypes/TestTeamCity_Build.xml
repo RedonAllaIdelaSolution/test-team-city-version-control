@@ -15,7 +15,6 @@
       <setting-ref ref="RUNNER_9" />
     </disabled-settings>
     <parameters>
-      <param name="Test" value="zxass" />
       <param name="env.Test" value="z" />
     </parameters>
     <build-runners>
