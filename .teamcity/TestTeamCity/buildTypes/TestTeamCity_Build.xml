@@ -16,6 +16,13 @@
     </disabled-settings>
     <parameters />
     <build-runners>
+      <runner id="RUNNER_18" name="Get teamcity.build.branc" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="node getTeamCityBranchBuild.js --branch=%teamcity.build.branch%" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
       <runner id="RUNNER_14" name="" type="jb.nuget.installer">
         <parameters>
           <param name="nuget.path" value="%teamcity.tool.NuGet.CommandLine.DEFAULT%" />
@@ -111,13 +118,6 @@
           <param name="nunit_platform" value="MSIL" />
           <param name="nunit_version" value="NUnit-2.6.3" />
           <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_18" name="Get teamcity.build.branc" type="simpleRunner">
-        <parameters>
-          <param name="script.content" value="node getTeamCityBranchBuild.js --branch=%teamcity.build.branch%" />
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
     </build-runners>
