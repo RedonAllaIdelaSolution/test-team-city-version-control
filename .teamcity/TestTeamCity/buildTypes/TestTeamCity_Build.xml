@@ -20,7 +20,7 @@
     <build-runners>
       <runner id="RUNNER_18" name="Get teamcity.build.branch" type="simpleRunner">
         <parameters>
-          <param name="script.content" value="node getTeamCityBranchBuild.js --branch=%vcsroot.branch% --Test=%env.Test% --MyParam=%env.MyParam%" />
+          <param name="script.content" value="node getTeamCityBranchBuild.js --branch=%vcsroot.branch% --Test=%env.Test% --MyParam=build." />
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
