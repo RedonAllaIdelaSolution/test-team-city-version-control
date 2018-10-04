@@ -3,7 +3,6 @@
   <name>Test Team City</name>
   <parameters>
     <param name="env.DeployFTPHostname" value="" />
-    <param name="env.Test" value="" />
   </parameters>
   <project-extensions>
     <extension id="PROJECT_EXT_2" type="versionedSettings">
