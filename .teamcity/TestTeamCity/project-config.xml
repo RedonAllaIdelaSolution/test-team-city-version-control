@@ -2,7 +2,7 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="300e6486-7b6d-4b88-82e1-1c9440911e9c" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/2018.1/project-config.xsd">
   <name>Test Team City</name>
   <parameters>
-    <param name="env.MyParam" value="" />
+    <param name="env.DeployFTPHostname" value="" />
     <param name="env.Test" value="" />
   </parameters>
   <project-extensions>
