@@ -47,7 +47,7 @@
           <param name="vs.version" value="vs2017" />
         </parameters>
       </runner>
-      <runner id="RUNNER_7" name="build publish" type="VS.Solution">
+      <runner id="RUNNER_7" name="build publish / TESTS" type="VS.Solution">
         <parameters>
           <param name="build-file-path" value="Test.sln" />
           <param name="msbuild.prop.Configuration" value="Release" />
