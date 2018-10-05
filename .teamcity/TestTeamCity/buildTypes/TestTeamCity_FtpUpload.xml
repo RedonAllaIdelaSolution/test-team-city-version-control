@@ -22,7 +22,9 @@
     <vcs-settings>
       <vcs-entry-ref root-id="TestTeamCityVersionControllSettings" />
     </vcs-settings>
-    <requirements />
+    <requirements>
+      <contains id="RQ_2" name="env.AGENT_NAME" value="Altin-PC" />
+    </requirements>
     <build-triggers>
       <build-trigger id="TRIGGER_1" type="buildDependencyTrigger">
         <parameters>
