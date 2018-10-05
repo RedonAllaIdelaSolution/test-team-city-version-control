@@ -126,7 +126,9 @@
     <vcs-settings>
       <vcs-entry-ref root-id="TestTeamCity_HttpsGithubComRedonAllaIdelaSolutionTestTeamCityGitRefsHeadsMaster" />
     </vcs-settings>
-    <requirements />
+    <requirements>
+      <contains id="RQ_1" name="env.AGENT_NAME" value="BuildAgent2" />
+    </requirements>
     <build-triggers>
       <build-trigger id="vcsTrigger" type="vcsTrigger">
         <parameters>
