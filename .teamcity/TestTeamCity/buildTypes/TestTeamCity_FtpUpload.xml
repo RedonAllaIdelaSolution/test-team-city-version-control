@@ -12,7 +12,7 @@
           <param name="jetbrains.buildServer.deployer.ftp.securityMode" value="0" />
           <param name="jetbrains.buildServer.deployer.ftp.transferMethod" value="AUTO" />
           <param name="jetbrains.buildServer.deployer.sourcePath" value="%system.teamcity.build.checkoutDir%/Test/obj/Release/Package/PackageTmp =&gt; site/wwwroot/" />
-          <param name="jetbrains.buildServer.deployer.targetUrl" value="%env.DeployFTPHostname%" />
+          <param name="jetbrains.buildServer.deployer.targetUrl" value="ftp://waws-prod-dm1-025.ftp.azurewebsites.windows.net" />
           <param name="jetbrains.buildServer.deployer.username" value="$TestTeamCity" />
           <param name="secure:jetbrains.buildServer.deployer.password" value="credentialsJSON:47594637-89a1-453f-a5eb-137f53fbedaa" />
           <param name="teamcity.step.mode" value="default" />
