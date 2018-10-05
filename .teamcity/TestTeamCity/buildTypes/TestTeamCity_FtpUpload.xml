@@ -4,7 +4,21 @@
   <description />
   <settings>
     <parameters />
-    <build-runners />
+    <build-runners>
+      <runner id="RUNNER_12" name="FTP Upload" type="ftp-deploy-runner">
+        <parameters>
+          <param name="jetbrains.buildServer.deployer.ftp.authMethod" value="USER_PWD" />
+          <param name="jetbrains.buildServer.deployer.ftp.ftpMode" value="PASSIVE" />
+          <param name="jetbrains.buildServer.deployer.ftp.securityMode" value="0" />
+          <param name="jetbrains.buildServer.deployer.ftp.transferMethod" value="AUTO" />
+          <param name="jetbrains.buildServer.deployer.sourcePath" value="%system.teamcity.build.checkoutDir%/Test/obj/Release/Package/PackageTmp =&gt; site/wwwroot/" />
+          <param name="jetbrains.buildServer.deployer.targetUrl" value="%env.DeployFTPHostname%" />
+          <param name="jetbrains.buildServer.deployer.username" value="$TestTeamCity" />
+          <param name="secure:jetbrains.buildServer.deployer.password" value="credentialsJSON:47594637-89a1-453f-a5eb-137f53fbedaa" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+    </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="TestTeamCityVersionControllSettings" />
     </vcs-settings>
